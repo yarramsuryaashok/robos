@@ -1,0 +1,327 @@
+body {
+    background-image: radial-gradient(circle,white(15, 200, 21),white(0, 230, 55),white(14, 213, 11));
+    
+  }
+  h1
+  { 
+    text-align: center;
+    
+  }
+.container{
+    height :380px;
+    width: 400px;
+    border: 4px solid rgb(37, 15, 183);
+    margin:auto;
+    margin-top: 20%;
+}
+.face{
+    height: 90px;
+    width:120px ;
+    background:rgb(86, 177, 7);
+    margin:auto;
+    margin-top: 8%;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    transition :width 1s ease;
+}
+.container:hover .face{ 
+    transform: translateX(25px);
+    animation: face 1s alternate-reverse;
+}
+@keyframes face{
+        0%{
+            transform: translateX(20px);
+            
+        }
+        25%{
+            transform: translateX(-20px);
+            
+        }
+        50%{
+            transform: translateX(20px);
+            
+        }
+        75%{
+            transform: translateX(-20px);
+            
+        }
+        100%{
+            transform: translateX(20px);
+            
+        }
+}
+.eyes{
+    display: flex;
+    width: 80px;
+    justify-content:space-evenly;
+    padding-top: 30%;
+}
+.leye{
+    height:80px ;
+    width: 60px;
+    background:rgb(204, 255, 0) ;
+    margin: auto;
+    border-radius: 70%;
+}
+.container:hover .leye{
+    animation: leye 2s infinite;
+}
+@keyframes leye{
+    0%{
+        height: 30px;
+        background: rgb(101, 20, 162);
+    }
+    25%{
+        height: 35px;
+        background:pink;
+    }
+    50%{
+        height: 50px;
+        background: blue;
+    }
+    75%{
+        height: 35px;
+        background: black;
+    }
+    100%{
+        height: 50px;
+        background: rgb(69, 16, 214);
+    }
+
+}
+.reye{
+    height:50px ;
+    width: 50px;
+    background: red;
+    margin: auto;
+    border-radius: 50%;
+}
+.container:hover .reye{
+    animation: reye 2s infinite;
+}
+@keyframes reye{
+    0%{
+        height: 0px;
+        background: yellow;
+    }
+    25%{
+        height: 35px;
+        background: red;
+    }
+    50%{
+        height: 0px;
+        background: blue;
+    }
+    75%{
+        height: 35px;
+        background: black;
+    }
+    100%{
+        height: 0px;
+        background: white;
+    }
+
+}
+.body{
+    display: flex;
+    width: 150px;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 15px;
+}
+.larm{
+    height: 85px;
+    width: 23px;
+    background:tomato;
+    border-radius: 30%;
+    margin-top: 15px;
+}
+.container:hover .larm{
+       animation: larm 1s infinite; 
+}
+@keyframes larm{
+    0%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    100%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+    }
+}
+.rarm{
+    height: 85px;
+    width: 23px;
+    background: rgb(184, 89, 11);
+    border-radius: 30%;
+    margin-top: 15px;
+}
+.container:hover .rarm{
+    animation: rarm 1s infinite; 
+}
+@keyframes rarm{
+    0%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    100%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+    }
+}
+.center{
+    height: 155px;
+    width: 100px;
+    background: rgb(194, 211, 8);
+    border-radius: 60%;
+}
+@keyframes .center{
+    0%{
+        transform: rotate(-90deg);
+        transform-origin: top right;
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(-90deg);
+        transform-origin: top right;
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top :left;
+    }
+    100%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+    }
+}
+.container:hover .center{
+    animation: center 1s infinite;
+}
+@keyframes center{
+from{
+     transform: rotate(0deg);
+}
+to{
+    transform: rotate(240deg);
+}
+}
+.legs{
+    display: flex;
+    width: 170px;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 10px;
+}
+.lleg{
+    height: 83px;
+    width: 23px;
+    background:silver;
+    border-radius: 30%;
+}
+.container:hover .lleg{
+    animation: lleg 1s infinite;
+}
+@keyframes lleg{
+    0%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    100%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+    }
+}
+
+.rleg{
+    height: 83px;
+    width: 23px;
+    background: silver;
+    border-radius: 30%;
+}
+.container:hover .rleg{
+    animation: rleg 1s infinite;
+}
+@keyframes rleg{
+    0%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    100%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+    }
+}
+@keyframes .center{
+    0%{
+        height: 0px;
+        background: white;
+    }
+    25%{
+        height: 35px;
+        background: red;
+    }
+    50%{
+        height: 0px;
+        background: blue;
+    }
+    75%{
+        height: 35px;
+        background: black;
+    }
+    100%{
+        height: 0px;
+        background: white;
+    }
+
+}
